@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: external
+spec:
+  containers:
+  - name: external
+    image: gcr.io/roidtc-user201/internal-image:v1.0.0
+    ports:
+    - containerPort: 80
